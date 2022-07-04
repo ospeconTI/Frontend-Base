@@ -5,13 +5,15 @@ import { reducer as screenReducer } from "./screens/reducer";
 import { reducer as routingReducer } from "./routing/reducer";
 import { reducer as apiReducer } from "./api/reducer";
 import { reducer as autorizacionReducer } from "./autorizacion/reducer";
+import { reducer as geolocalizacionReducer } from "./geolocalizacion/reducer";
 
 export const rootReducer = (state = {}, action) => {
-    const presentacionesEstadosRed = state.presentacionesEstados;
-    return {
-        api: apiReducer(state.api, action),
-        ui: uiReducer(state.ui, action),
-        screen: screenReducer(state.screen, action),
-        routing: routingReducer(state.routing, action),
-    };
+	const presentacionesEstadosRed = state.presentacionesEstados;
+	return {
+		api: apiReducer(state.api, action),
+		ui: uiReducer(state.ui, action),
+		screen: screenReducer(state.screen, action),
+		routing: routingReducer(state.routing, action),
+		geolocalizacion: geolocalizacionReducer(state.geolocalizacion, action),
+	};
 };

@@ -21,51 +21,59 @@ export const STEP = "[ui] step";
 export const SHOW_WARNING = "[ui] show warning";
 export const HIDE_WARNING = "[ui] hide warning";
 
+export const MAPA_CLICK = "[ui] mapa click";
+
 export const showSpinner = () => ({
-    type: SHOW_SPINNER,
+	type: SHOW_SPINNER,
 });
 export const hideSpinner = () => ({
-    type: HIDE_SPINNER,
+	type: HIDE_SPINNER,
 });
 
 export const showError = (message) => ({
-    type: SHOW_ERROR,
-    message: message,
+	type: SHOW_ERROR,
+	message: message,
 });
 export const hideError = () => ({
-    type: HIDE_ERROR,
+	type: HIDE_ERROR,
 });
 
 export const showWarning = (pagina = "", nroWarning = -1, backgroundColor = "fondoInformacion", timeOut = 1500) => ({
-    type: SHOW_WARNING,
-    pagina: pagina,
-    nroWarning: nroWarning,
-    backgroundColor: backgroundColor,
-    timeOut: timeOut,
+	type: SHOW_WARNING,
+	pagina: pagina,
+	nroWarning: nroWarning,
+	backgroundColor: backgroundColor,
+	timeOut: timeOut,
 });
 export const hideWarning = () => ({
-    type: HIDE_WARNING,
+	type: HIDE_WARNING,
 });
 
 export const captureMedia = () => ({
-    type: CAPTURE_MEDIA,
+	type: CAPTURE_MEDIA,
 });
 export const setMedia = (size) => ({
-    type: SET_MEDIA,
-    size: size,
+	type: SET_MEDIA,
+	size: size,
 });
 
 export const setMediaOrientation = (orientation) => ({
-    type: SET_MEDIA_ORIENTATION,
-    orientation: orientation,
+	type: SET_MEDIA_ORIENTATION,
+	orientation: orientation,
 });
 
 export const selection = (option) => ({
-    type: SELECTION,
-    option: option,
+	type: SELECTION,
+	option: option,
 });
 
 export const setStep = (step) => ({
-    type: STEP,
-    step: step,
+	type: STEP,
+	step: step,
+});
+
+export const mapaClick = (feature, event) => ({
+	type: MAPA_CLICK,
+	feature: feature,
+	event: event,
 });

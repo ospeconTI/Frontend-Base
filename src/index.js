@@ -15,13 +15,13 @@ import { login } from "./redux/autorizacion/actions";
 import { register as registerSW, activate as activateSW } from "./libs/serviceWorker";
 
 if (process.env.NODE_ENV === "production") {
-    registerSW();
-    activateSW();
+	registerSW();
+	activateSW();
 }
 
-viewMode("main");
+//viewMode("splash");
 store.dispatch(captureMedia());
-store.dispatch(goTo("main"));
+store.dispatch(goTo("splash"));
 
 console.log("Sirviendo datos de :" + SERVICE_URL);
 /* if ("credentials" in navigator) {
@@ -40,13 +40,13 @@ console.log("Sirviendo datos de :" + SERVICE_URL);
 }
  */
 export default {
-    login: (email, password) => {
-        store.dispatch(login(email, password));
-    },
-    cambioClave: () => {
-        store.dispatch(goTo("cambioClave"));
-    },
-    miembro: () => {
-        store.dispatch(goTo("serMiembro"));
-    },
+	login: (email, password) => {
+		store.dispatch(login(email, password));
+	},
+	cambioClave: () => {
+		store.dispatch(goTo("cambioClave"));
+	},
+	miembro: () => {
+		store.dispatch(goTo("serMiembro"));
+	},
 };
