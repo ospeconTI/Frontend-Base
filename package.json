@@ -18,7 +18,7 @@
         "@brunomon/helpers": "^3.0.0",
         "@brunomon/nano-input": "^2.0.4",
         "@brunomon/odata-fetch-factory": "^3.1.0",
-        "@brunomon/template-lit": "^1.7.1",
+        "@brunomon/template-lit": "^1.8.0",
         "@material-ui/icons": "^4.11.2",
         "css-loader": "^3.4.1",
         "file-loader": "^5.0.2",
