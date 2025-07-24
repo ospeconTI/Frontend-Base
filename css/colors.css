@@ -1,6 +1,7 @@
 /** @format */
 
 html {
+    --modo: light;
     --primario: rgba(0, 81, 139, 1);
     --primario10: rgba(74, 125, 187, 1);
     --primario-10: rgba(0, 41, 93, 1);
@@ -33,6 +34,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
     html {
+        --modo: dark;
         --formulario: #343434;
         --on-formulario: rgba(255, 255, 255, 0.87);
         --on-formulario-disabled: rgba(255, 255, 255, 0.38);
