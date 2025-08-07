@@ -20,8 +20,8 @@ module.exports = merge(common, {
     },
     plugins: [
         new webpack.DefinePlugin({
-            SERVICE_URL: JSON.stringify("http://localhost/promocionsocial"),
-            AUTHENTICATION_URL: JSON.stringify("https://fronttest.uocra.net"),
+            SERVICE_URL: JSON.stringify("http://localhost:3000"),
+            AUTHENTICATION_URL: JSON.stringify("https://auth.uocra.net"),
         }),
     ],
 });

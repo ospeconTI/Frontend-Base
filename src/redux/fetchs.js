@@ -4,7 +4,7 @@ import { ODataEntity, ODataFetchFactory } from "@brunomon/odata-fetch-factory";
 import { fetchFactory } from "../libs/fetchFactory";
 
 let webApiExpedientes = SERVICE_URL;
-let webApi = SERVICE_URL + "/api";
+let webApi = SERVICE_URL + "/v1";
 
 const expedienteOdataFactory = ODataFetchFactory({
     fetch: fetch,

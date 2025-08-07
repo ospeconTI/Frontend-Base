@@ -1,7 +1,7 @@
 {
-    "name": "frontend-base",
-    "version": "1.3.0",
-    "description": "Frontend-Base",
+    "name": "backofice",
+    "version": "1.0.0",
+    "description": "Backofice",
     "main": "./src/index.js",
     "scripts": {
         "watch": "webpack --watch",
